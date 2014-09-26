@@ -22,7 +22,7 @@ apt-get update
 #apt-get install -y  
 
 # Install build dependencies.
-apt-get install -y wget bsdmainutils autoconf makepasswd libqrencode-dev libcurl4-openssl-dev automake make libdb5.1++-dev ntp git build-essential libssl-dev libdb5.1-dev libboost-all-dev 
+apt-get install -y libtool wget bsdmainutils autoconf makepasswd libqrencode-dev libcurl4-openssl-dev automake make libdb5.1++-dev ntp git build-essential libssl-dev libdb5.1-dev libboost-all-dev 
 
 # Prepare building
 mkdir -p /src
