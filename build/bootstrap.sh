@@ -33,7 +33,7 @@ mkdir /root/.mazacoin
 mkdir /etc/service/mazacoind
 ln -s /root/.mazacoin /
 cd /src
-git clone https://github.com/MazaCoin/MazaCoin mazacoin
+git clone https://github.com/MazaCoin/mazacoin-new mazacoin
 cd "mazacoin"
 #sed -i 's/USE_UPNP:=0/USE_UPNP:=-/g' makefile.unix
 #make -f makefile.unix  && cp -a mazacoind /usr/local/bin && make -f makefile.unix clean
