@@ -11,7 +11,7 @@ RUN         /tmp/bootstrap.sh
 
 
 ADD         mazacoin.conf /root/.mazacoin/
-RUN         pass=`makepasswd -char 32` ;echo "rpcpassword=${pass}"  >> /root/.mazacoin/mazacoin.conf 
+#RUN         pass=`makepasswd -char 32` ;echo "rpcpassword=${pass}"  >> /root/.mazacoin/mazacoin.conf 
 RUN         chmod 600 /root/.mazacoin/mazacoin.conf
 ADD	    mazacoind.run /etc/service/mazacoind/run
 RUN         chmod 700 /etc/service/mazacoind/run

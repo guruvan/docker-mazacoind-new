@@ -30,6 +30,7 @@ mkdir -p /src
 
 # Download, compile and install mazacoind.
 mkdir /root/.mazacoin
+touch /root/.mazacoin/.firstrun
 mkdir /etc/service/mazacoind
 ln -s /root/.mazacoin /
 cd /src
