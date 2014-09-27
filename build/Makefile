@@ -1,4 +1,5 @@
-USER=guruvan
+#
+USER=`whoami`
 
 build:
 	sudo docker build -t ${USER}/mazacoind-new .

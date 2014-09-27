@@ -4,7 +4,7 @@ if [ ! -L /.mazacoin ]
   then ln -s /root/.mazacoin /
 fi
 if [ -f /root/.mazacoin/.firstrun ] 
-   then sed -i 's/rpcpassword/d' /root/.mazacoin/mazacoin.conf 
+   then sed -i '/rpcpassword/d' /root/.mazacoin/mazacoin.conf 
    pass=`makepasswd -char 32` ;echo "rpcpassword=${pass}"  >> /root/.mazacoin/mazacoin.conf
    rm /root/.mazacoin/.firstrun
 fi
